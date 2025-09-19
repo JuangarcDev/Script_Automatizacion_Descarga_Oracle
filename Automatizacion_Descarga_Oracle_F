@@ -60,8 +60,8 @@ def log_exc(prefix=""):
 # ============================
 if not BUCKET_NAME:
     print("[ERROR] La variable de entorno OCI_BUCKET no está definida.")
-    print("▶ Define temporalmente en PowerShell con:  $env:OCI_BUCKET='ABCD'")
-    print("▶ O crea un archivo .env con: OCI_BUCKET=ABCD")
+    print("▶ Define temporalmente en PowerShell con:  $env:OCI_BUCKET='NOMBRE'")
+    print("▶ O crea un archivo .env con: OCI_BUCKET=NOMBRE")
     sys.exit(1)
 
 if not os.path.isfile(EXCEL_FILE):
